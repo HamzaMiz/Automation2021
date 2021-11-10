@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AndroidTotrSuite" preserve-order="true"  verbose="8" parallel="none">
+
+    <listeners>
+        <listener class-name="framework.utils.listeners.TestListener" />
+
+        <listener class-name="framework.utils.listeners.AnnotationTransformer"/>
+
+    </listeners>
+
+    <parameter name="nodePath" value="/home/linuxbrew/.linuxbrew/bin/node"/>
+    <parameter name="appiumPath" value="/home/linuxbrew/.linuxbrew/bin/appium"/>
+
+    <parameter name="groupToCall" value="android group"/>
+    <parameter name="accountOfSecondDevice" value="User B"/>
+    <parameter name="accountOfThirdDevice" value="User C"/>
+    <parameter name="contact" value="User A"/> <!--Main account -->
+    <parameter name="contact2" value="User B"/> <!--Another contact  -->
+    <parameter name="titleOfEvent" value="event"/>
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Login_STC3_STC4"  >
+        <parameter name="companyID" value="579309"/>
+        <parameter name="country" value="tunisia"/>
+        <parameter name="phone" value="50000000"/>
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="login_STC3_STC4"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Conversation_STC3"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC3"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC4"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC4"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC20"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC20"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC21"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC21"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC18"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC18"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC19"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC19"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Settings_STC1"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Settings_STC1"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Settings_STC2"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Settings_STC2"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC2"  >
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC2"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC1"  >
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC1"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Conversation_STC2"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC2"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Conversation_STC1"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC1"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC5"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC5"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC27"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC27"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC28"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC28"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC25"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC25"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC26"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC26"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC8"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC8"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC7"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC7"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC9"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC9"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC6"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="CallsSTC6"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC3"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC3"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="conversationSTC5"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC5"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="conversationSTC8"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC8"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="conversationSTC7"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC7"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="conversationSTC9"  >
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC9"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+
+    <test enabled="true" verbose="8" preserve-order="true"  name="doMyBusiness_STC1">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+                    <include name="myBusiness_STC1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true"  name="doMyBusiness_STC2">
+        <parameter name="processName" value="MultiSections"/>
+       
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+                    <include name="myBusiness_STC2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true"  name="doMyBusiness_STC4">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+                    <include name="myBusiness_STC4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true"  name="doMyBusiness_STC5">
+        <parameter name="processName" value="MultiSections"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+                    <include name="myBusiness_STC5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+    <test enabled="true" verbose="8" preserve-order="true"  name="doMyBusiness_STC7">
+        <parameter name="widgetName" value="contact widget"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+                    <include name="myBusiness_STC7"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC16">
+
+        <parameter name="widgetName" value="start and stop"/>
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC16"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC17">
+
+        <parameter name="widgetName" value="Adress"/>
+        <parameter name="location" value="Germany"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC17"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC25">
+
+        <parameter name="widgetName" value="drop down"/>
+        <parameter name="contact" value="User A"/>
+<!--       send process to himself -->
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC25"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC26">
+
+        <parameter name="widgetName" value="instance name"/>
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC26"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC29">
+
+        <parameter name="processName" value="mandatory"/>
+<!--
+         the process should have three mandatory widgets email and text are and phone number
+-->
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC29"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC30">
+
+        <parameter name="contact" value="User A"/>
+        <parameter name="processName" value="MultiSections"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC30"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC33">
+
+        <parameter name="contact" value="User A"/>
+
+        <parameter name="processName" value="Multi"/>
+        <parameter name="group" value="android group"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC33"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC37">
+
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="mybusiness_STC37"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC60">
+
+        <parameter name="processName" value="MultiSections"/>
+        <parameter name="contact" value="User A"/>
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="mybusiness_STC60"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="conversationSTC6"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC6"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC16"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC16"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test enabled="true" verbose="2" preserve-order="true" name="Calls_STC17"  >
+
+       <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="callsSTC17"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC61">
+    <parameter name="processName" value="MultiSections"/>
+        <parameter name="contact2" value="User B"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+
+                    <include name="mybusiness_STC61"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="Contact_STC2">
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Contact_STC2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="Contact_STC3">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Contact_STC3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="Contact_STC4">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Contact_STC4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="Contact_STC5">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Contact_STC5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="Contact_STC7">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Contact_STC7"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="MyBusiness_STC19">
+
+
+        <parameter name="processName" value="text area widget"/>
+        <parameter name="contact2" value="User B"/>
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC19"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC20">
+
+        <parameter name="processName" value="Multi"/>
+        <parameter name="contact" value="User A"/>
+        <parameter name="contact2" value="User B"/>
+
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="mybusiness_STC20"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC21">
+
+        <parameter name="processName" value="Multi"/>
+        <parameter name="contact" value="User A"/>
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC21"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC24">
+
+        <parameter name="processName" value="text area widget"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC24"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC27_28">
+
+        <parameter name="processName" value="text area widget"/>
+        <parameter name="contact" value="User A"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC27_28"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC38">
+
+        <parameter name="processName" value="text area widget"/>
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC38"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC39">
+        <parameter name="processName" value="text area widget"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC39"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC43">
+        <parameter name="processName" value="info"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC43"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+   <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC45">
+        <parameter name="processName" value="info"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC45"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+   <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC46">
+        <parameter name="processName" value="info"/>
+
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC46"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC63">
+        <parameter name="processName" value="text area widget"/>
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC63"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC64">
+<!--        A process with repeat option activated-->
+        <parameter name="processName" value="text area widget"/>
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC64"/>
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test enabled="true" verbose="8" preserve-order="true" name="doMyBusiness_STC36">
+
+        <parameter name="processName" value="Multi"/>
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="myBusiness_STC36"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="callsSTC10">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC10"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="callsSTC11">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC11"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="callsSTC12">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC12"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test enabled="true" verbose="8" preserve-order="true" name="callsSTC15">
+
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="Calls_STC15"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test enabled="true" verbose="2" preserve-order="true" name="Login_STC5"  >
+        <classes>
+            <class name="mobile.android.totr.TotrSanity">
+                <methods>
+
+                    <include name="login_STC5"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+</suite>

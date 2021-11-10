@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" preserve-order="true"  verbose="8">
+
+<listeners>
+    <listener class-name="framework.utils.listeners.TestListener" />
+</listeners>
+
+    <parameter name="nodePath" value="/usr/local/bin/node"/>
+    <parameter name="appiumPath" value="/usr/local/bin/appium"/>
+    <parameter name="groupToCall" value="Ios group"/>
+    <parameter name="accountOfSecondDevice" value="hamza ipad"/>
+    <parameter name="accountOfThirdDevice" value="User F"/>
+
+    <parameter name="contact" value="User A ios"/> <!--Main account -->
+    <parameter name="contact2" value="user E"/> <!--Another contact  -->
+
+
+
+    <test enabled="true" verbose="8" preserve-order="true" name="Conversation_STC3" >
+        <parameter name="titleOfEvent" value="event"/>
+        <classes>
+            <class name="mobile.iOS.totr.TotrSanity">
+                <methods>
+
+                    <include name="conversationSTC3"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>

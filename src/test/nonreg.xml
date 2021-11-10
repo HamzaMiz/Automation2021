@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" preserve-order="true"  verbose="8">
+
+<listeners>
+    <listener class-name="framework.utils.listeners.TestListener" />
+    <listener class-name="framework.utils.listeners.AnnotationTransformer"/>
+
+</listeners>
+
+    <parameter name="nodePath" value="/usr/local/bin/node"/>
+    <parameter name="appiumPath" value="/usr/local/bin/appium"/>
+
+    <test enabled="true" verbose="2" preserve-order="true" name="batch"  >
+
+
+        <parameter name="numberoFMessages" value="5"/>
+        <parameter name="account" value="hamza ios"/> <!--Anot"her contact  -->
+
+        <classes>
+
+            <class name="mobile.iOS.totr.NonRegTotr">
+                <methods>
+
+                    <include name="batchMessages"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+
+
+</suite>
